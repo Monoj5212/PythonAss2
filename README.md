@@ -12,3 +12,18 @@ add=0                                          # "add" variable assing to 0 ("ze
 for a in range(1,51):                          # for etration for 1 to 50 range.
     add=add+a                                  # value of "a" storing in add variable.
 print("The sum of numbers 1 to 50 is:",add)
+
+
+# PythonAss3_Task1
+
+num=int(input("Enter any number:"))            # Take input in "num" variable.
+
+def fact(num):                                 # function define fact()
+    if num < 2:                                # checking the input value is <2 or >2
+        return 1
+    else:
+        return num * fact(num-1)                # performing recursion.
+
+result=fact(num)                                # function calling.
+
+print("The factorial value of ",num,"is:",result) # printing result/output.
