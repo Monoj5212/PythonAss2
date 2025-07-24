@@ -27,3 +27,17 @@ def fact(num):                                 # function define fact()
 result=fact(num)                                # function calling.
 
 print("The factorial value of ",num,"is:",result) # printing result/output.
+
+
+# PythonAss3_Task2
+
+num=int(input("Enter a number:"))                    # Take input in "num" variable.
+
+from math import *                                   # importing all from math module
+SquareRoot=sqrt(num)                                 # Square root of the number using sqrt()
+NatureLog=log(num)                                   # Natural logarithm (log base e) of the number using log()
+NumSine=sin(num)                                     # Sine of the number (in radians) using sin()
+
+print("Square root of",num,"is:",SquareRoot)
+print("Natural logarithm of",num,"is:",NatureLog)
+print("Sin of",num,"is:",NumSine)
