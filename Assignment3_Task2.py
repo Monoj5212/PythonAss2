@@ -12,7 +12,7 @@ num=int(input("Enter a number:"))
 
 from math import *
 SquareRoot=sqrt(num)
-NatureLog=log(num,e)
+NatureLog=log(num)
 NumSine=sin(num)
 
 print("Square root of",num,"is:",SquareRoot)
