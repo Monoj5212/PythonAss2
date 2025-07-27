@@ -41,3 +41,39 @@ NumSine=sin(num)                                     # Sine of the number (in ra
 print("Square root of",num,"is:",SquareRoot)
 print("Natural logarithm of",num,"is:",NatureLog)
 print("Sin of",num,"is:",NumSine)
+
+# PythonAss4_Task1
+
+try:                                    # use for File Not Found Error Handling
+    my_file = open("sample.txt","r")    # Use to read sample.txt file and store my_file variable.
+    redding1=my_file.read()             # Use to read a file
+    my_file.seek(0)                     # Reset the file pointer to the beginning of the file
+
+    redding2=my_file.readline()         # Use to read (1st) one line file
+    my_file.seek(0)                     # Reset the file pointer to the beginning of the file
+
+    redding3=my_file.readlines()         # Use to read all line as list of the file
+    my_file.seek(0)                      # Reset the file pointer to the beginning of the file
+
+    print(redding1)
+    print(redding2)
+    print(redding3)
+
+    my_file.close() # Use to close file
+except FileNotFoundError:
+    print("The file 'sample.txt' does not exist.") # If File Not Found then it will be print.
+
+
+# PythonAss4_Task2
+
+with open("output.txt", "w") as file1:                                      # open output.txt file in writing mode.
+    file1.write(input("Enter some text write to the file: ") + "\n")        # write the data to the file.
+    print("Data successfully written to the file.")
+
+with open("output.txt","a") as file1:                                     # open output.txt file in append mode.
+    file1.write(input("Enter some text to append:") + "\n")               # append the data to the file.
+    print("Data Successfully append to the file.")
+
+with open("output.txt","r") as file1:                                     # open output.txt file in riding mode.
+    print("Final content of the file:")
+    print(file1.read())  # Use to read and print content of the file.
